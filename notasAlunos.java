@@ -1,0 +1,65 @@
+package RepetiçãoJava;
+
+import java.util.Scanner;
+
+public class notasAlunos {
+
+	public static void main(String[] args) {
+		
+		Scanner nota = new Scanner(System.in) ;
+		
+		float n1, n2, n3, n4, media;
+		int contAluno = 0;
+		String question ;
+		
+		
+		do		{
+			
+		contAluno++;
+			
+		System.out.println("Digite a nota do primeiro bimestre do aluno " + contAluno);
+		n1 =  nota.nextFloat() ;
+		
+		System.out.println("Digite a nota do segundo bimestre do aluno " + contAluno);
+		n2 = nota.nextFloat() ;
+		
+		System.out.println("Digite a nota do terceiro bimestre do aluno " + contAluno);
+		n3 = nota.nextFloat() ;
+		
+		System.out.println("Digite a nota do quarto bimestre do aluno " + contAluno);
+		n4 = nota.nextFloat() ;
+		
+		media = (n1+n2+n3+n4) / 4;
+		System.out.println("A média do aluno " + contAluno + " é "+ media);
+		
+		
+		if(media < 3) {
+			System.out.println("O aluno esta reprovado");
+		} else if (media < 7) {
+			System.out.println("O aluno esta de recuperação");
+		} else {
+			System.out.println(("O aluno está aprovado"));		
+		}
+		System.out.println("Deseja calcular a media de mais algum aluno? S/N");
+		question = nota.next();
+
+		
+		}	while (question.equals("S")); {
+		
+	}
+	}
+	}
+
+		
+
+		
+		
+		
+		
+		
+	
+	
+	
+	
+
+
